@@ -35,10 +35,12 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Ejemplo\ de\ funcion\ while.o \
 	${OBJECTDIR}/La\ serie\ Fibonacci.o \
 	${OBJECTDIR}/Mayor\ de\ 3\ numeros.o \
 	${OBJECTDIR}/Mayor\ de\ 4\ numeros.o \
 	${OBJECTDIR}/Operaciones.o \
+	${OBJECTDIR}/Tablas\ de\ multiplicar.o \
 	${OBJECTDIR}/ejemplo\ de\ If\ Else.o
 
 
@@ -66,6 +68,12 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_de_programacion.exe: ${OB
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_de_programacion ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+.NO_PARALLEL:${OBJECTDIR}/Ejemplo\ de\ funcion\ while.o
+${OBJECTDIR}/Ejemplo\ de\ funcion\ while.o: Ejemplo\ de\ funcion\ while.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Ejemplo\ de\ funcion\ while.o Ejemplo\ de\ funcion\ while.c
+
 .NO_PARALLEL:${OBJECTDIR}/La\ serie\ Fibonacci.o
 ${OBJECTDIR}/La\ serie\ Fibonacci.o: La\ serie\ Fibonacci.c 
 	${MKDIR} -p ${OBJECTDIR}
@@ -88,6 +96,12 @@ ${OBJECTDIR}/Operaciones.o: Operaciones.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Operaciones.o Operaciones.c
+
+.NO_PARALLEL:${OBJECTDIR}/Tablas\ de\ multiplicar.o
+${OBJECTDIR}/Tablas\ de\ multiplicar.o: Tablas\ de\ multiplicar.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tablas\ de\ multiplicar.o Tablas\ de\ multiplicar.c
 
 .NO_PARALLEL:${OBJECTDIR}/ejemplo\ de\ If\ Else.o
 ${OBJECTDIR}/ejemplo\ de\ If\ Else.o: ejemplo\ de\ If\ Else.c 

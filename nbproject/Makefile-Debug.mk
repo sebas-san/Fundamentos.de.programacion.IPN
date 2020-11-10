@@ -35,7 +35,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/La\ serie\ Fibonacci.o
+	${OBJECTDIR}/Ejemplo\ de\ funcion\ while.o \
+	${OBJECTDIR}/Tablas\ de\ multiplicar.o
 
 
 # C Compiler Flags
@@ -62,11 +63,17 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_de_programacion.exe: ${OB
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_de_programacion ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-.NO_PARALLEL:${OBJECTDIR}/La\ serie\ Fibonacci.o
-${OBJECTDIR}/La\ serie\ Fibonacci.o: La\ serie\ Fibonacci.c 
+.NO_PARALLEL:${OBJECTDIR}/Ejemplo\ de\ funcion\ while.o
+${OBJECTDIR}/Ejemplo\ de\ funcion\ while.o: Ejemplo\ de\ funcion\ while.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/La\ serie\ Fibonacci.o La\ serie\ Fibonacci.c
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Ejemplo\ de\ funcion\ while.o Ejemplo\ de\ funcion\ while.c
+
+.NO_PARALLEL:${OBJECTDIR}/Tablas\ de\ multiplicar.o
+${OBJECTDIR}/Tablas\ de\ multiplicar.o: Tablas\ de\ multiplicar.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tablas\ de\ multiplicar.o Tablas\ de\ multiplicar.c
 
 # Subprojects
 .build-subprojects:
