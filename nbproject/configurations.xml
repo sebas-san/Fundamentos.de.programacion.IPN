@@ -42,8 +42,6 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="Ejemplo de funcion while.c" ex="false" tool="0" flavor2="0">
-      </item>
       <item path="Tablas de multiplicar.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
