@@ -1,6 +1,6 @@
    //////////////////////////
   // Tablas de multiplicar//
- //      del 2 al 10     //
+ //      del 1 al 10     //
 //////////////////////////
 
 #include <stdio.h>
@@ -8,20 +8,24 @@
 
 int main(int argc, char** argv) {
 
-    //variables
-    int a,b,c;
+    //Variables
+    int a,b,c,d;
     a = 1;
     b = 1;
-    c = 10;
+    c = 10; //Multiplicar hasta...
+    d = 10; //Hasta la tabla del... 
     
-    //ejecutar     
+    //Ejecutar     
     while(a<=c){
-        a = a + 1;
-        while(b<=c){
-            printf("%d X %d = %d \n",a,b,b*a);
-        
+        int b = 1;
+        while(b<=d){
+            printf("%d X %d = %d\n",a,b,b*a);
+            b = b + 1;
         }
+        printf("-------------\n",a);
+        a = a + 1;
     }
     
     return (0);
 }
+
