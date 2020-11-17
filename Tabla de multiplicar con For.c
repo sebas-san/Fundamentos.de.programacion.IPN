@@ -1,6 +1,6 @@
    //////////////////////////
   // Tablas de multiplicar//
- //      del 1 al 10     //
+ //       con for        //
 //////////////////////////
 
 #include <stdio.h>
@@ -16,14 +16,12 @@ int main(int argc, char** argv) {
     d = 10; //Hasta la tabla del... 
     
     //Ejecutar     
-    while(a<=c){
-        int b = 1;
-        while(b<=d){
+    for(a=1;a<=c;a++){
+        int b=1;
+        for(b=1;b<=d;b++){
             printf("%d X %d = %d\n",a,b,b*a);
-            b = b + 1;
         }
         printf("-------------\n");
-        a = a + 1;
     }
     
     return (0);

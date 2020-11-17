@@ -35,7 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Tablas\ de\ multiplicar.o
+	${OBJECTDIR}/Tabla\ de\ multiplicar\ con\ For.o
 
 
 # C Compiler Flags
@@ -62,11 +62,11 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_de_programacion.exe: ${OB
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_de_programacion ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-.NO_PARALLEL:${OBJECTDIR}/Tablas\ de\ multiplicar.o
-${OBJECTDIR}/Tablas\ de\ multiplicar.o: Tablas\ de\ multiplicar.c 
+.NO_PARALLEL:${OBJECTDIR}/Tabla\ de\ multiplicar\ con\ For.o
+${OBJECTDIR}/Tabla\ de\ multiplicar\ con\ For.o: Tabla\ de\ multiplicar\ con\ For.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tablas\ de\ multiplicar.o Tablas\ de\ multiplicar.c
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tabla\ de\ multiplicar\ con\ For.o Tabla\ de\ multiplicar\ con\ For.c
 
 # Subprojects
 .build-subprojects:

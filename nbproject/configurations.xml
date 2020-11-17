@@ -13,10 +13,12 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>Ejemplo de funcion while.c</itemPath>
+      <itemPath>Estructura del For.c</itemPath>
       <itemPath>La serie Fibonacci.c</itemPath>
       <itemPath>Mayor de 3 numeros.c</itemPath>
       <itemPath>Mayor de 4 numeros.c</itemPath>
       <itemPath>Operaciones.c</itemPath>
+      <itemPath>Tabla de multiplicar con For.c</itemPath>
       <itemPath>Tablas de multiplicar.c</itemPath>
       <itemPath>ejemplo de If Else.c</itemPath>
     </logicalFolder>
@@ -42,7 +44,7 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="Tablas de multiplicar.c" ex="false" tool="0" flavor2="0">
+      <item path="Tabla de multiplicar con For.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -67,6 +69,8 @@
       </compileType>
       <item path="Ejemplo de funcion while.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="Estructura del For.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="La serie Fibonacci.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Mayor de 3 numeros.c" ex="false" tool="0" flavor2="0">
@@ -74,6 +78,8 @@
       <item path="Mayor de 4 numeros.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Operaciones.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Tabla de multiplicar con For.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Tablas de multiplicar.c" ex="false" tool="0" flavor2="0">
       </item>
