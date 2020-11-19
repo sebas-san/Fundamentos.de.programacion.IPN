@@ -35,6 +35,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Arreglo\ de\ 100\ elementos.o \
+	${OBJECTDIR}/Arreglos\ simples.o \
 	${OBJECTDIR}/Ejemplo\ de\ funcion\ while.o \
 	${OBJECTDIR}/Estructura\ del\ For.o \
 	${OBJECTDIR}/La\ serie\ Fibonacci.o \
@@ -43,6 +45,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/Operaciones.o \
 	${OBJECTDIR}/Tabla\ de\ multiplicar\ con\ For.o \
 	${OBJECTDIR}/Tablas\ de\ multiplicar.o \
+	${OBJECTDIR}/Tarea\ scanf.o \
 	${OBJECTDIR}/ejemplo\ de\ If\ Else.o
 
 
@@ -69,6 +72,18 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_de_programacion.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_de_programacion ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+.NO_PARALLEL:${OBJECTDIR}/Arreglo\ de\ 100\ elementos.o
+${OBJECTDIR}/Arreglo\ de\ 100\ elementos.o: Arreglo\ de\ 100\ elementos.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Arreglo\ de\ 100\ elementos.o Arreglo\ de\ 100\ elementos.c
+
+.NO_PARALLEL:${OBJECTDIR}/Arreglos\ simples.o
+${OBJECTDIR}/Arreglos\ simples.o: Arreglos\ simples.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Arreglos\ simples.o Arreglos\ simples.c
 
 .NO_PARALLEL:${OBJECTDIR}/Ejemplo\ de\ funcion\ while.o
 ${OBJECTDIR}/Ejemplo\ de\ funcion\ while.o: Ejemplo\ de\ funcion\ while.c 
@@ -116,6 +131,12 @@ ${OBJECTDIR}/Tablas\ de\ multiplicar.o: Tablas\ de\ multiplicar.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tablas\ de\ multiplicar.o Tablas\ de\ multiplicar.c
+
+.NO_PARALLEL:${OBJECTDIR}/Tarea\ scanf.o
+${OBJECTDIR}/Tarea\ scanf.o: Tarea\ scanf.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tarea\ scanf.o Tarea\ scanf.c
 
 .NO_PARALLEL:${OBJECTDIR}/ejemplo\ de\ If\ Else.o
 ${OBJECTDIR}/ejemplo\ de\ If\ Else.o: ejemplo\ de\ If\ Else.c 

@@ -35,7 +35,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Tabla\ de\ multiplicar\ con\ For.o
+	${OBJECTDIR}/Arreglo\ de\ 100\ elementos.o \
+	${OBJECTDIR}/Tarea\ scanf.o
 
 
 # C Compiler Flags
@@ -62,11 +63,17 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_de_programacion.exe: ${OB
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_de_programacion ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-.NO_PARALLEL:${OBJECTDIR}/Tabla\ de\ multiplicar\ con\ For.o
-${OBJECTDIR}/Tabla\ de\ multiplicar\ con\ For.o: Tabla\ de\ multiplicar\ con\ For.c 
+.NO_PARALLEL:${OBJECTDIR}/Arreglo\ de\ 100\ elementos.o
+${OBJECTDIR}/Arreglo\ de\ 100\ elementos.o: Arreglo\ de\ 100\ elementos.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tabla\ de\ multiplicar\ con\ For.o Tabla\ de\ multiplicar\ con\ For.c
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Arreglo\ de\ 100\ elementos.o Arreglo\ de\ 100\ elementos.c
+
+.NO_PARALLEL:${OBJECTDIR}/Tarea\ scanf.o
+${OBJECTDIR}/Tarea\ scanf.o: Tarea\ scanf.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tarea\ scanf.o Tarea\ scanf.c
 
 # Subprojects
 .build-subprojects:
