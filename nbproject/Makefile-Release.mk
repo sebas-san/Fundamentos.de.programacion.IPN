@@ -45,7 +45,6 @@ OBJECTFILES= \
 	${OBJECTDIR}/Operaciones.o \
 	${OBJECTDIR}/Tabla\ de\ multiplicar\ con\ For.o \
 	${OBJECTDIR}/Tablas\ de\ multiplicar.o \
-	${OBJECTDIR}/Tarea\ scanf.o \
 	${OBJECTDIR}/ejemplo\ de\ If\ Else.o
 
 
@@ -131,12 +130,6 @@ ${OBJECTDIR}/Tablas\ de\ multiplicar.o: Tablas\ de\ multiplicar.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tablas\ de\ multiplicar.o Tablas\ de\ multiplicar.c
-
-.NO_PARALLEL:${OBJECTDIR}/Tarea\ scanf.o
-${OBJECTDIR}/Tarea\ scanf.o: Tarea\ scanf.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tarea\ scanf.o Tarea\ scanf.c
 
 .NO_PARALLEL:${OBJECTDIR}/ejemplo\ de\ If\ Else.o
 ${OBJECTDIR}/ejemplo\ de\ If\ Else.o: ejemplo\ de\ If\ Else.c 

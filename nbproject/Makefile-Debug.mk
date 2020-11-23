@@ -35,8 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Arreglo\ de\ 100\ elementos.o \
-	${OBJECTDIR}/Tarea\ scanf.o
+	${OBJECTDIR}/Arreglo\ de\ 100\ elementos.o
 
 
 # C Compiler Flags
@@ -68,12 +67,6 @@ ${OBJECTDIR}/Arreglo\ de\ 100\ elementos.o: Arreglo\ de\ 100\ elementos.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Arreglo\ de\ 100\ elementos.o Arreglo\ de\ 100\ elementos.c
-
-.NO_PARALLEL:${OBJECTDIR}/Tarea\ scanf.o
-${OBJECTDIR}/Tarea\ scanf.o: Tarea\ scanf.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tarea\ scanf.o Tarea\ scanf.c
 
 # Subprojects
 .build-subprojects:
