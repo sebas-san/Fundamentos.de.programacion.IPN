@@ -39,10 +39,13 @@ OBJECTFILES= \
 	${OBJECTDIR}/Arreglos\ simples.o \
 	${OBJECTDIR}/Ejemplo\ de\ funcion\ while.o \
 	${OBJECTDIR}/Estructura\ del\ For.o \
+	${OBJECTDIR}/Funciones.o \
 	${OBJECTDIR}/La\ serie\ Fibonacci.o \
 	${OBJECTDIR}/Mayor\ de\ 3\ numeros.o \
 	${OBJECTDIR}/Mayor\ de\ 4\ numeros.o \
+	${OBJECTDIR}/Menu\ de\ conversion.o \
 	${OBJECTDIR}/Operaciones.o \
+	${OBJECTDIR}/Recursosmath.o \
 	${OBJECTDIR}/Tabla\ de\ multiplicar\ con\ For.o \
 	${OBJECTDIR}/Tablas\ de\ multiplicar.o \
 	${OBJECTDIR}/ejemplo\ de\ If\ Else.o
@@ -96,6 +99,11 @@ ${OBJECTDIR}/Estructura\ del\ For.o: Estructura\ del\ For.c
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Estructura\ del\ For.o Estructura\ del\ For.c
 
+${OBJECTDIR}/Funciones.o: Funciones.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Funciones.o Funciones.c
+
 .NO_PARALLEL:${OBJECTDIR}/La\ serie\ Fibonacci.o
 ${OBJECTDIR}/La\ serie\ Fibonacci.o: La\ serie\ Fibonacci.c 
 	${MKDIR} -p ${OBJECTDIR}
@@ -114,10 +122,21 @@ ${OBJECTDIR}/Mayor\ de\ 4\ numeros.o: Mayor\ de\ 4\ numeros.c
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Mayor\ de\ 4\ numeros.o Mayor\ de\ 4\ numeros.c
 
+.NO_PARALLEL:${OBJECTDIR}/Menu\ de\ conversion.o
+${OBJECTDIR}/Menu\ de\ conversion.o: Menu\ de\ conversion.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Menu\ de\ conversion.o Menu\ de\ conversion.c
+
 ${OBJECTDIR}/Operaciones.o: Operaciones.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Operaciones.o Operaciones.c
+
+${OBJECTDIR}/Recursosmath.o: Recursosmath.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Recursosmath.o Recursosmath.c
 
 .NO_PARALLEL:${OBJECTDIR}/Tabla\ de\ multiplicar\ con\ For.o
 ${OBJECTDIR}/Tabla\ de\ multiplicar\ con\ For.o: Tabla\ de\ multiplicar\ con\ For.c 

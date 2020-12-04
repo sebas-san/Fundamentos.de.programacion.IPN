@@ -7,7 +7,7 @@
 
 int main(int argc, char** argv) {
 
-    int A [100];
+    int A[100];
     int x = 0;
     
     int i = 0;

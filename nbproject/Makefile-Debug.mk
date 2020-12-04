@@ -35,7 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Arreglo\ de\ 100\ elementos.o
+	${OBJECTDIR}/Menu\ de\ conversion.o
 
 
 # C Compiler Flags
@@ -62,11 +62,11 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_de_programacion.exe: ${OB
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_de_programacion ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-.NO_PARALLEL:${OBJECTDIR}/Arreglo\ de\ 100\ elementos.o
-${OBJECTDIR}/Arreglo\ de\ 100\ elementos.o: Arreglo\ de\ 100\ elementos.c 
+.NO_PARALLEL:${OBJECTDIR}/Menu\ de\ conversion.o
+${OBJECTDIR}/Menu\ de\ conversion.o: Menu\ de\ conversion.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Arreglo\ de\ 100\ elementos.o Arreglo\ de\ 100\ elementos.c
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Menu\ de\ conversion.o Menu\ de\ conversion.c
 
 # Subprojects
 .build-subprojects:
