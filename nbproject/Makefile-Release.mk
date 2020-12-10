@@ -21,7 +21,7 @@ FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=Cygwin-Windows
+CND_PLATFORM=Cygwin_1-Windows
 CND_DLIB_EXT=dll
 CND_CONF=Release
 CND_DISTDIR=dist
@@ -37,17 +37,18 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/Arreglo\ de\ 100\ elementos.o \
 	${OBJECTDIR}/Arreglos\ simples.o \
+	${OBJECTDIR}/Conversiones.o \
 	${OBJECTDIR}/Ejemplo\ de\ funcion\ while.o \
 	${OBJECTDIR}/Estructura\ del\ For.o \
 	${OBJECTDIR}/Funciones.o \
 	${OBJECTDIR}/La\ serie\ Fibonacci.o \
 	${OBJECTDIR}/Mayor\ de\ 3\ numeros.o \
 	${OBJECTDIR}/Mayor\ de\ 4\ numeros.o \
-	${OBJECTDIR}/Menu\ de\ conversion.o \
 	${OBJECTDIR}/Operaciones.o \
 	${OBJECTDIR}/Recursosmath.o \
 	${OBJECTDIR}/Tabla\ de\ multiplicar\ con\ For.o \
 	${OBJECTDIR}/Tablas\ de\ multiplicar.o \
+	${OBJECTDIR}/apuntadores.o \
 	${OBJECTDIR}/ejemplo\ de\ If\ Else.o
 
 
@@ -87,6 +88,11 @@ ${OBJECTDIR}/Arreglos\ simples.o: Arreglos\ simples.c
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Arreglos\ simples.o Arreglos\ simples.c
 
+${OBJECTDIR}/Conversiones.o: Conversiones.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Conversiones.o Conversiones.c
+
 .NO_PARALLEL:${OBJECTDIR}/Ejemplo\ de\ funcion\ while.o
 ${OBJECTDIR}/Ejemplo\ de\ funcion\ while.o: Ejemplo\ de\ funcion\ while.c 
 	${MKDIR} -p ${OBJECTDIR}
@@ -122,12 +128,6 @@ ${OBJECTDIR}/Mayor\ de\ 4\ numeros.o: Mayor\ de\ 4\ numeros.c
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Mayor\ de\ 4\ numeros.o Mayor\ de\ 4\ numeros.c
 
-.NO_PARALLEL:${OBJECTDIR}/Menu\ de\ conversion.o
-${OBJECTDIR}/Menu\ de\ conversion.o: Menu\ de\ conversion.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Menu\ de\ conversion.o Menu\ de\ conversion.c
-
 ${OBJECTDIR}/Operaciones.o: Operaciones.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -149,6 +149,11 @@ ${OBJECTDIR}/Tablas\ de\ multiplicar.o: Tablas\ de\ multiplicar.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tablas\ de\ multiplicar.o Tablas\ de\ multiplicar.c
+
+${OBJECTDIR}/apuntadores.o: apuntadores.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/apuntadores.o apuntadores.c
 
 .NO_PARALLEL:${OBJECTDIR}/ejemplo\ de\ If\ Else.o
 ${OBJECTDIR}/ejemplo\ de\ If\ Else.o: ejemplo\ de\ If\ Else.c 

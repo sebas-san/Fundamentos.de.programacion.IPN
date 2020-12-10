@@ -21,7 +21,7 @@ FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=Cygwin-Windows
+CND_PLATFORM=Cygwin_1-Windows
 CND_DLIB_EXT=dll
 CND_CONF=Debug
 CND_DISTDIR=dist
@@ -35,7 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Menu\ de\ conversion.o
+	${OBJECTDIR}/Conversiones.o
 
 
 # C Compiler Flags
@@ -62,11 +62,10 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_de_programacion.exe: ${OB
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_de_programacion ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-.NO_PARALLEL:${OBJECTDIR}/Menu\ de\ conversion.o
-${OBJECTDIR}/Menu\ de\ conversion.o: Menu\ de\ conversion.c 
+${OBJECTDIR}/Conversiones.o: Conversiones.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Menu\ de\ conversion.o Menu\ de\ conversion.c
+	$(COMPILE.c) -g -I/cygdrive/C/cygwin64/bin/gcc.exe -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Conversiones.o Conversiones.c
 
 # Subprojects
 .build-subprojects:

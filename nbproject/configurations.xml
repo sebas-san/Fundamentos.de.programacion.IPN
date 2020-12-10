@@ -14,17 +14,18 @@
                    projectFiles="true">
       <itemPath>Arreglo de 100 elementos.c</itemPath>
       <itemPath>Arreglos simples.c</itemPath>
+      <itemPath>Conversiones.c</itemPath>
       <itemPath>Ejemplo de funcion while.c</itemPath>
       <itemPath>Estructura del For.c</itemPath>
       <itemPath>Funciones.c</itemPath>
       <itemPath>La serie Fibonacci.c</itemPath>
       <itemPath>Mayor de 3 numeros.c</itemPath>
       <itemPath>Mayor de 4 numeros.c</itemPath>
-      <itemPath>Menu de conversion.c</itemPath>
       <itemPath>Operaciones.c</itemPath>
       <itemPath>Recursosmath.c</itemPath>
       <itemPath>Tabla de multiplicar con For.c</itemPath>
       <itemPath>Tablas de multiplicar.c</itemPath>
+      <itemPath>apuntadores.c</itemPath>
       <itemPath>ejemplo de If Else.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -48,8 +49,13 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <cTool>
+          <incDir>
+            <pElem>C:/cygwin64/bin/gcc.exe</pElem>
+          </incDir>
+        </cTool>
       </compileType>
-      <item path="Menu de conversion.c" ex="false" tool="0" flavor2="0">
+      <item path="Conversiones.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -76,6 +82,8 @@
       </item>
       <item path="Arreglos simples.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="Conversiones.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="Ejemplo de funcion while.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Estructura del For.c" ex="false" tool="0" flavor2="0">
@@ -88,8 +96,6 @@
       </item>
       <item path="Mayor de 4 numeros.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="Menu de conversion.c" ex="false" tool="0" flavor2="0">
-      </item>
       <item path="Operaciones.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Recursosmath.c" ex="false" tool="0" flavor2="0">
@@ -97,6 +103,8 @@
       <item path="Tabla de multiplicar con For.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Tablas de multiplicar.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="apuntadores.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="ejemplo de If Else.c" ex="false" tool="0" flavor2="0">
       </item>
